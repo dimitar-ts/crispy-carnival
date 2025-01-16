@@ -6,6 +6,7 @@ name: CI
 on:
    # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  push:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,4 +31,4 @@ jobs:
           echo Befehl 2 wurde ausgeführt
 
       - name: Test script
-        run: echo Test 123!
+        run: echo Test 1234!
