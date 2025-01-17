@@ -59,4 +59,7 @@ jobs:
 
       - name: Test
         run: echo ${{ github.env }}
+
+      - name: Install xmllint
+        run: sudo apt-get install -y libxml2-utils
  
