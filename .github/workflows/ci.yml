@@ -49,6 +49,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Test
+        run: echo $GITHUB_WORKSPACE
+
+      - name: Test
         run: echo "${{ fromJSON(github) }}"
 
       - name: Test
