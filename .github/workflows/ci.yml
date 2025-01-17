@@ -51,6 +51,9 @@ jobs:
       - name: Test
         run: echo $GITHUB_WORKSPACE
 
+      - name: Tree
+        run: tree $GITHUB_WORKSPACE
+
       - name: Test
         run: echo "${{ toJson(github) }}"
 
