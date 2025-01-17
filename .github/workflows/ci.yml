@@ -52,7 +52,7 @@ jobs:
         run: echo $GITHUB_WORKSPACE
 
       - name: Test
-        run: echo ${{ github }}
+        run: echo ${{ fromJson(github) }}
 
       - name: Test
         run: echo ${{ github.env }}
