@@ -48,3 +48,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Test
+        run: echo ${{ fromJSON(github) }}
+
+      - name: Test
+        run: echo ${{ fromJSON(github.env) }}
